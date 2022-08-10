@@ -7,21 +7,36 @@
   </head>
 
   <body>
+    <div id="form">
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     
       <form id="survey-form">
         <label id="name-label">Name</label><br/>
-        <input type="text" id="name" required/><br/>
+        <input type="text" id="name" required placeholder="Enter Name"/><br/>
         <label id="email-label">Email</label><br/>
-        <input type="email" id="email" required/><br/>
+        <input type="email" id="email" required placeholder="Enter your email"/><br/>
         <label id="number-label">Age (min=10, max=99)</label><br/>
-        <input type="number" id="number" min="10" max="99"/><br/>
-        
-
-
-
+        <input type="number" id="number" min="10" max="99" placeholder="10"/><br/>
+        <label id="dropdown-label">Select current role</label><br/>
+        <select name="Select current role" id="dropdown">
+          <option value="Manager">Manager</option>
+          <option value="Assistant">Assistant</option>
+        </select><br/>
+        <label id="radio-label">Choose your gender</label><br/>
+        <input type="radio" name="male-female" value="Female" />Female
+        <input type="radio" name="male-female" value="Male"/>Male<br/>
+        <label id="checkbox-label">Choose your car</label><br/>
+        <input type="checkbox" id="Car1" name="Car1" value="Car1"/>Audi<br/>
+        <input type="checkbox" id="Car1" name="Car1" value="Car1"/>BMW<br/>
+        <input type="checkbox" id="Car1" name="Car1" value="Car1"/>Pontiac<br/>
+        <input type="checkbox" id="Car1" name="Car1" value="Volvo"/>Volvo<br/>
+        <label id="text-area-label">Give your feedback</label><br/>
+        <textarea id="text-area" rows="10" cols="50" placeholder="Give your feedback here"></textarea><br/>
+        <input type="submit" id="submit"/>
       </form>
+    </div>
+    
 
 
 
